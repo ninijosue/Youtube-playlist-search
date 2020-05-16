@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ 
+    <title>youtube Api</title>
+    
+</head>
+<body>
+  <nav class="black">
+      <div class="nav-wrapper">
+          <div class="container">
+              <a href="#!">youtube channel Data</a>
+          </div>
+      </div>
+  </nav>
+  <br>
+    <section>
+        <div class="container"  id="authantication">
+           <h3 class="center">Authantication</h3>
+           <p class="center"> <button class="btn #18ffff " id="authorize-button">sign Up</button></p>
+           <p class="center"> <button class="btn red" id="authorizing-button">Log In</button></p>
+           <p class="center"><button class="btn red" id="authorized-button" style="display: none">Log Out</button></p> 
+           
+            <div class="row  " id="fill">
+                <div class="input" style="display: none">
+                    <div class="input-field col s5 right">
+                            <input id="password" type="password" class="validate" >
+                            <label for="password">Password</label>
+                            </div>
+                            
+                            <form class="col s5">
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Your Email</span>
+                                  </div>
+                                </div>
+                              </form> 
+                            </div>
+            </div>
+            <p class="center"><a class="waves-effect waves-light btn " style="display: none" id="sendPassword">Send</a></p>
+            
+        </div>
+
+        <div class="container" id="videocontent" style="display:none">
+            <h3>ninijosue</h3>
+            <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                         
+                          <textarea id="icon_prefix2" class="materialize-textarea" name='search'></textarea>
+                          <label for="icon_prefix2">Youtube Channel</label>
+                        </div>
+                        <button class="btn" id="searchButton" style="margin-top: 2rem;position:absolute">search</button>
+                      </div>
+                    </form>
+                  </div>
+                  
+                  <div class="row">
+                  <a class="waves-effect waves-light btn " href="../src/video.html">Get images</a>
+                    
+                  </div>
+        </div>
+    </section>
+    <script src="/src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
